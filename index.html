@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiosco Repostería</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Pantalla Bienvenida -->
+<section id="home" class="screen active">
+  <img src="assets/logo.png" class="logo">
+  <h1>Bienvenido</h1>
+
+  <div class="cards">
+    <div class="card" onclick="goToMenu()">
+      <img src="assets/pastel.png">
+      <p>Ver Menú</p>
+    </div>
+
+    <div class="card" onclick="openContact()">
+      <img src="assets/cupcake.png">
+      <p>Contacto</p>
+    </div>
+  </div>
+</section>
+
+<!-- Menú -->
+<section id="menu" class="screen">
+  <h2>Menú</h2>
+  <div id="products" class="grid"></div>
+  <button class="cart-btn" onclick="openCart()">🛒 Ver Carrito</button>
+</section>
+
+<!-- Carrito -->
+<section id="cart" class="screen">
+  <h2>Tu Pedido</h2>
+  <div id="cartItems"></div>
+  <h3 id="total"></h3>
+
+  <input type="text" id="name" placeholder="Tu nombre">
+  <input type="tel" id="phone" placeholder="Teléfono">
+
+  <button onclick="sendOrder()">Finalizar Pedido</button>
+  <button onclick="goHome()">Volver</button>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
