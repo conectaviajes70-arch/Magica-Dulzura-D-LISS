@@ -77,7 +77,7 @@ function sendOrder() {
 
   // WhatsApp
   let msg = `Hola, soy ${name}. Quiero: ${order}`;
-  window.open(`https://wa.me/52XXXXXXXXXX?text=${encodeURIComponent(msg)}`);
+  window.open(`https://wa.me/525586120510?text=${encodeURIComponent(msg)}`);
 
   alert("Pedido enviado");
   cart = [];
